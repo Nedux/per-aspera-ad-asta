@@ -1,4 +1,9 @@
-
+function racoonGen() {
+    el = document.getElementById("raccoon");
+    console.log(el);
+    const rndInt = Math.floor(Math.random() * 26) + 1;
+    el.src = "./static/assets/raccoons/" + rndInt + ".jpg";
+}
 
 function sclose(element) {
     let id;
