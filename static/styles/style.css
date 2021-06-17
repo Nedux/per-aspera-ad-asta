@@ -247,6 +247,10 @@ section.year h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
@@ -256,6 +260,21 @@ section.year h1 {
 }
 
 .footer .container .rights:hover {
+  cursor: pointer;
+}
+
+.footer .container .racoon {
+  margin-top: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, currentColor)) 0 100%/var(--d, 0) 2px no-repeat;
+  background: linear-gradient(currentColor 0 0) 0 100%/var(--d, 0) 2px no-repeat;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footer .container .racoon:hover {
+  --d: 100%;
   cursor: pointer;
 }
 
@@ -376,6 +395,9 @@ section.year h1 {
     height: 250px;
     -ms-flex-item-align: end;
         align-self: flex-end;
+  }
+  .footer .container .racoon {
+    margin-top: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
